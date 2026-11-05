@@ -1,0 +1,206 @@
+{
+  "timestamp": "2026-11-03T20:48:38",
+  "model": "yolov8n.pt",
+  "imgsz": 640,
+  "epochs_config": 60,
+  "batch": 16,
+  "ultralytics": "8.4.200",
+  "torch": "2.5.1+cu121",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "dataset": {
+    "source": "Roboflow Universe danhdz/tienviet v5 (CC BY 4.0) + COCO val2017 (none)",
+    "split_counts": [
+      {
+        "Tap": "train",
+        "Anh tien": 3014,
+        "Anh goc": 654,
+        "Anh none": 480,
+        "1k": 331,
+        "10k": 320,
+        "100k": 296,
+        "2k": 422,
+        "20k": 360,
+        "200k": 334,
+        "5k": 323,
+        "50k": 360,
+        "500k": 268
+      },
+      {
+        "Tap": "val",
+        "Anh tien": 77,
+        "Anh goc": 77,
+        "Anh none": 60,
+        "1k": 0,
+        "10k": 8,
+        "100k": 8,
+        "2k": 2,
+        "20k": 15,
+        "200k": 11,
+        "5k": 11,
+        "50k": 11,
+        "500k": 11
+      },
+      {
+        "Tap": "test",
+        "Anh tien": 70,
+        "Anh goc": 70,
+        "Anh none": 60,
+        "1k": 7,
+        "10k": 8,
+        "100k": 7,
+        "2k": 5,
+        "20k": 8,
+        "200k": 5,
+        "5k": 8,
+        "50k": 12,
+        "500k": 9
+      }
+    ],
+    "none_percent": 15.95,
+    "groups": 537,
+    "leaked_groups_after_split": 0
+  },
+  "class_names": [
+    "1k",
+    "10k",
+    "100k",
+    "2k",
+    "20k",
+    "200k",
+    "5k",
+    "50k",
+    "500k"
+  ],
+  "test_detection": {
+    "mAP50": 0.9845185185185186,
+    "mAP50_95": 0.930676234567901,
+    "precision": 0.9402390799589951,
+    "recall": 0.9704626629326645,
+    "per_class": [
+      {
+        "lop": "1k",
+        "precision": 0.9653,
+        "recall": 1.0,
+        "mAP50": 0.995,
+        "mAP50-95": 0.995
+      },
+      {
+        "lop": "10k",
+        "precision": 1.0,
+        "recall": 0.8625,
+        "mAP50": 0.995,
+        "mAP50-95": 0.8495
+      },
+      {
+        "lop": "100k",
+        "precision": 0.9614,
+        "recall": 1.0,
+        "mAP50": 0.995,
+        "mAP50-95": 0.95
+      },
+      {
+        "lop": "2k",
+        "precision": 0.9404,
+        "recall": 1.0,
+        "mAP50": 0.995,
+        "mAP50-95": 0.995
+      },
+      {
+        "lop": "20k",
+        "precision": 0.8522,
+        "recall": 1.0,
+        "mAP50": 0.995,
+        "mAP50-95": 0.9268
+      },
+      {
+        "lop": "200k",
+        "precision": 0.9187,
+        "recall": 1.0,
+        "mAP50": 0.995,
+        "mAP50-95": 0.8883
+      },
+      {
+        "lop": "5k",
+        "precision": 0.874,
+        "recall": 1.0,
+        "mAP50": 0.9117,
+        "mAP50-95": 0.9001
+      },
+      {
+        "lop": "50k",
+        "precision": 0.9501,
+        "recall": 1.0,
+        "mAP50": 0.995,
+        "mAP50-95": 0.9486
+      },
+      {
+        "lop": "500k",
+        "precision": 1.0,
+        "recall": 0.8717,
+        "mAP50": 0.984,
+        "mAP50-95": 0.9228
+      }
+    ]
+  },
+  "test_app_level": {
+    "app_conf": 0.5,
+    "accuracy": 0.9846153846153847,
+    "wrong_denomination_rate": 0.014492753623188406,
+    "missed_money_rate": 0.0,
+    "false_alarm_rate": 0.01639344262295082,
+    "by_threshold": [
+      {
+        "nguong": 0.25,
+        "chinh xac %": 97.69,
+        "doc sai menh gia %": 1.45,
+        "bo sot tien %": 0.0,
+        "bao nham %": 3.28
+      },
+      {
+        "nguong": 0.4,
+        "chinh xac %": 97.69,
+        "doc sai menh gia %": 1.45,
+        "bo sot tien %": 0.0,
+        "bao nham %": 3.28
+      },
+      {
+        "nguong": 0.5,
+        "chinh xac %": 98.46,
+        "doc sai menh gia %": 1.45,
+        "bo sot tien %": 0.0,
+        "bao nham %": 1.64
+      },
+      {
+        "nguong": 0.6,
+        "chinh xac %": 97.69,
+        "doc sai menh gia %": 1.45,
+        "bo sot tien %": 1.45,
+        "bao nham %": 1.64
+      },
+      {
+        "nguong": 0.7,
+        "chinh xac %": 96.92,
+        "doc sai menh gia %": 1.45,
+        "bo sot tien %": 2.9,
+        "bao nham %": 1.64
+      },
+      {
+        "nguong": 0.8,
+        "chinh xac %": 94.62,
+        "doc sai menh gia %": 0.0,
+        "bo sot tien %": 8.7,
+        "bao nham %": 1.64
+      },
+      {
+        "nguong": 0.9,
+        "chinh xac %": 83.85,
+        "doc sai menh gia %": 0.0,
+        "bo sot tien %": 28.99,
+        "bao nham %": 1.64
+      }
+    ]
+  },
+  "notes": [
+    "Test chia theo nhom anh goc + phash, nhung van cung nguon chup voi train: can kiem thu tren dien thoai voi tien that truoc khi khang dinh do chinh xac thuc te."
+  ]
+}
